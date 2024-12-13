@@ -86,6 +86,6 @@ root@edge:~# dmidecode -t system | grep Version
  | Device | Description |
  | ------ | ------ |
  | 752-94xx | Patch not needed! |
- | 752-9800 HW1 | Patch not needed! |
- | 752-9800 HW2 | Needed after BIOS Update |
- | 752-9813 | Needed.|
+ | 752-9800 HW1 | Needed after BIOS Update |
+ | 752-9800 HW2 | **Needed** |
+ | 752-9813 | **Needed** |
