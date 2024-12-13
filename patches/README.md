@@ -5,6 +5,9 @@
 </p>
 
 ## Patches
+| Patches | Description |
+| ------- | -------- |
+| wago-fw04-patch_1.0.0_all.deb | [JUMP](#fw04-01) |
 
 ###  How to install a patch:
 
@@ -62,3 +65,27 @@
      Example output:
      <p><img src="../images/example.png" alt="example-installation" title="Example-installation" /></p>
 
+# Patch description
+
+## <a name="fw04-01"> wago-fw04-patch_1.0.0_all.deb
+* This patch will correct the network names after a BIOS update
+  
+
+* Detect which hardware version of **752-9800** is used
+```
+dmidecode -t system | grep Version
+```
+Output:
+```
+root@edge:~# dmidecode -t system | grep Version
+	Version: 4224040202
+```
+
+* Compatibily Matrix
+
+ | Device | Description |
+ | ------ | ------ |
+ | 752-94xx | Patch not needed! |
+ | 752-9800 HW1 | Patch not needed! |
+ | 752-9800 HW2 | Needed after BIOS Update |
+ | 752-9813 | Needed.|
